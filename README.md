@@ -1,13 +1,21 @@
-# Web Scraper for Reddit's CMV Delta Threads
+<p align="center">
+<img src="image/banner_scraper.png" alt="banner"/>
+</p>
 
-[demo](reddit.ipynb)
+This web scraper collects persuasive discussions in the Change My View (CMV) subreddit. It is designed to build a corpus for argument mining to answer questions like "What makes a statement persuasive?" 
 
-This web scraper collects discussion threads that led to a change of someone's view to a certain topic.
+- [Demo Notebook](reddit.ipynb)
+- [Persuasion Corpus](https://github.com/toshikoshibano/persuasion_corpus) ... Raw corpus scraped between Feb 22, 2022 and Mar 5, 2022.
 
+### Collaboration project with Qichao Jiang, Andrew Stich and Yuesheng Luo
+- [Persuasion Pilot Study](https://github.com/toshikoshibano/persuasion_study)
+- [Reddit Climate Change Corpus App](https://github.com/toshikoshibano/reddit_climate_change_app)
+
+This scraper was originally inspired by [Analyzing the Semantic Types of Claims and Premises in an Online Persuasive Forum (Hidey et al., 2017)](https://aclanthology.org/W17-5102/) and [AMPERSAND: Argument Mining for PERSuAsive oNline Discussions (Chakrabarty et al, 2020)](https://arxiv.org/abs/2004.14677).
 
 ## Setting up
-1. Obtain your credentials by following [this](https://www.geeksforgeeks.org/scraping-reddit-using-python/).
-2. Hard-code your credentials into `utils.py`.
+1. Obtain the credentials by following [this](https://www.geeksforgeeks.org/scraping-reddit-using-python/).
+2. Hard-code the credentials into `utils.py`.
 ```
 def activate_reddit():
     client_id = "XXX"
